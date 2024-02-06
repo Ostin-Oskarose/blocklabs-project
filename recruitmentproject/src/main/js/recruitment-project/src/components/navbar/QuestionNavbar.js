@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 
+import SignupButton from '../SignupButton/SignupButton';
+
 function QuestionNavbar() {
 
     return (
@@ -13,7 +15,7 @@ function QuestionNavbar() {
                 </Col>
                 <Col className="d-flex gap-2 float-end" md="auto">
                     <Button>Login</Button>
-                    <Button>Sign up</Button>
+                    <SignupButton />
                 </Col>
             </Container>
         </Navbar >

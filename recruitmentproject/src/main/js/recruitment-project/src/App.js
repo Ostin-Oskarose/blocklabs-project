@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/QuestionNavbar.js'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage.js';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainPage />,
-  },
-]);
+import SignupPage from './pages/SignupPage.js';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+      </Routes>
     </div>
   );
 }
