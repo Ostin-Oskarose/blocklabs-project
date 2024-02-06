@@ -8,7 +8,7 @@ function QuestionNavbar() {
     return (
         <Navbar className="bg-body-tertiary" stickuy="top">
             <Container fluid>
-                <Col>
+                <Col className="float-start">
                     <Navbar.Brand>Questions</Navbar.Brand>
                 </Col>
                 <Col className="d-flex gap-2 float-end" md="auto">
