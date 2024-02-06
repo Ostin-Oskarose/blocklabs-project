@@ -10,8 +10,10 @@ function SignupPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSignup = async () => {
-        const response = await fetch('api/user/signup', {
+    const handleSignup = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch('http://localhost:8080/api/user/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
